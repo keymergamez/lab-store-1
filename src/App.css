@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #e1f7f1;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	color: #333;
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #666;
+	padding: 20px;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+
+.Products {
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 240px);
+	gap: 26px;
+	place-content: center;
+	margin: 3em 0 0 0;
+}
+	@media (max-width: 640px) {
+		.Products {
+		 grid-template-columns: repeat(auto-fill, 140px);
+		}
+	   }
+
+
+img{
+    max-width: 100%;
+}
